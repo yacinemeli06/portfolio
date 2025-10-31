@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #f4f5f7;
+  background-color: #0d1117;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 30px 10px;
+  background: #111827;
+  border-bottom: 1px solid #1f2937;
+}
+header h1 { margin: 0; font-size: 2rem; color: #60a5fa; }
+header p { color: #cbd5e1; margin-top: 6px; }
+nav { margin-top: 12px; }
+nav a {
+  color: #cbd5e1;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover, nav a.active {
+  color: #93c5fd;
+  border-bottom: 2px solid #93c5fd;
+}
+
+/* Canvas de fond */
+#neurons {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at center, #0f172a, #0d1117);
+}
+
+/* SECTIONS */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #93c5fd;
+  font-size: 1.5rem;
+  border-left: 3px solid #93c5fd;
+  padding-left: 8px;
+}
+
+p, li {
+  color: #e2e8f0;
+}
+
+.articles {
+  display: grid;
+  gap: 30px;
+}
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+.card a {
+  color: #93c5fd;
+  text-decoration: none;
+  font-weight: 600;
+}
+.card a:hover {
+  text-decoration: underline;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(147,197,253,0.15);
+}
+
+/* Apparition progressive */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background: #111827;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
