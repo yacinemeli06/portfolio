@@ -44,6 +44,7 @@ nav {
   z-index: 50;
   border-bottom: 1px solid #eee;
   backdrop-filter: blur(6px);
+  padding: 0 2%;
 }
 
 nav .profile {
