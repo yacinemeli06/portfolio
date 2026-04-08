@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.CSS" />
   <title>Mes projets - Touazi Yacine</title>
+  
+  <style>
+    /* Grille spécifique pour aligner les projets à l'horizontale avec un bel espace */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 40px; /* L'espace parfait entre les cartes */
+      margin-top: 30px;
+    }
+  </style>
 </head>
 
 <body>
@@ -27,9 +37,9 @@
     <header>
       <h1>Mes projets</h1>
       <p>
-        Voici l’un de mes projets réalisés dans le cadre du 
-        <strong>BTS SIO option SLAM</strong>.  
-        Il s’agit d’un site web de gestion automobile relié à une base de données MySQL.
+        Voici quelques-uns de mes projets réalisés dans le cadre du 
+        <strong>BTS SIO option SLAM</strong> ou en autonomie.  
+        Ils illustrent mes compétences en développement web et en logique de programmation.
       </p>
     </header>
 
@@ -53,13 +63,60 @@
           la structuration d’une base de données relationnelle, 
           ainsi que la gestion de formulaires et de sessions utilisateurs.
         </p>
-
-        
         <a class="btn-primary" href="https://ali-delta-six.vercel.app/" target="_blank">Voir le site</a>
       </div>
+
+      <div class="card">
+        <h2>Projet : Clone de Temple Run (Jeu Web)</h2>
+        <p>
+          Développement d'un mini-jeu de type "endless runner" inspiré du célèbre jeu Temple Run, directement jouable dans le navigateur. L'objectif est d'esquiver les obstacles le plus longtemps possible.
+        </p>
+        <ul>
+          <li><strong>Langages utilisés :</strong> HTML, CSS, JavaScript (WebGL / 3D)</li>
+          <li><strong>Outils :</strong> Visual Studio Code, Vercel, GitHub</li>
+          <li><strong>Réalisation :</strong> Création solo </li>
+        </ul>
+        <p>
+          Ce projet m’a permis de travailler sur la logique de jeu (game loop), la génération dynamique d'obstacles, la gestion des collisions et le rendu 3D dans le navigateur.
+        </p>
+        <a class="btn-primary" href="https://temple-run-eight.vercel.app" target="_blank">Voir le jeu</a>
+      </div>
+
+      <div class="card">
+        <h2>Projet : M.I.A - Assistant IA Cloud</h2>
+        <p>
+          Développement d'une interface conversationnelle intelligente (chatbot) connectée à l'API Google Gemini. L'application intègre des profils personnalisés, la génération d'images, et l'analyse de fichiers.
+        </p>
+        <ul>
+          <li><strong>Langages utilisés :</strong> HTML, CSS, JavaScript</li>
+          <li><strong>APIs & Bibliothèques :</strong> Gemini API, Pollinations.ai, Mermaid.js, Highlight.js</li>
+          <li><strong>Réalisation :</strong> En collaboration (Yacine & Syrine)</li>
+        </ul>
+        <p>
+          Ce projet complexe m'a permis de manipuler des API externes (LLM), de gérer des états asynchrones complexes en JS, et de concevoir une UI/UX moderne avec un effet "Glassmorphism".
+        </p>
+        <a class="btn-primary" href="https://m-i-a.vercel.app" target="_blank">Voir le projet</a>
+      </div>
+
+      <div class="card">
+        <h2>Projet : Jeu d'Aventure Textuel (Python)</h2>
+        <p>
+          Développement d'un jeu de rôle textuel (RPG) jouable dans le terminal, inspiré de l'univers d'un célèbre manga (Lycée A.U.). Le joueur explore différents lieux, gère des ressources et affronte des ennemis.
+        </p>
+        <ul>
+          <li><strong>Langages utilisés :</strong> Python</li>
+          <li><strong>Concepts :</strong> Algorithmique, conditions, boucles, fonctions</li>
+          <li><strong>Structures de données :</strong> Listes, Dictionnaires</li>
+          <li><strong>Réalisation :</strong> Création solo</li>
+        </ul>
+        <p>
+          Ce projet m'a permis de consolider ma logique de programmation en créant un système de combat au tour par tour, une gestion d'inventaire complexe (objets clés vs consommables), et un système de déplacement dynamique.
+        </p>
+        <a class="btn-primary" href="#" target="_blank">Voir le code sur GitHub</a>
+      </div>
+
     </div>
   </section>
-
 
   <footer>
     <div class="colonne">

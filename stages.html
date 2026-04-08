@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet" href="style.CSS" />
+  <link rel="stylesheet" href="stages.css" />
+  
+  <title>Mes Stages - Touazi Yacine</title>
+
+  <style>
+    /* Effet fluide/vent pour la barre de progression */
+    .timeline-progress {
+      background: linear-gradient(180deg, #0f62fe 0%, #78a9ff 50%, #0f62fe 100%) !important;
+      background-size: 100% 150px !important;
+      animation: waveEffect 1s linear infinite !important;
+    }
+
+    @keyframes waveEffect {
+      0% { background-position: 0px 0px; }
+      100% { background-position: 0px 150px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bg-glow blob-1"></div>
+  <div class="bg-glow blob-2"></div>
+
+  <nav>
+    <div class="profile">
+      <img src="ssj5.jpg" alt="photo de profil" />
+      <h1>Touazi Yacine</h1>
+    </div>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="projet.html">Projets</a></li>
+      <li><a href="stages.html">Stages</a></li>
+      <li><a href="veille.html">Veille</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-content premium-container">
+    <header class="stages-header">
+      <div class="badge-tech">Parcours</div>
+      <h1 class="gradient-text">Expériences Professionnelles</h1>
+      <p>
+        Découvrez mes immersions en entreprise réalisées pendant mon <strong>BTS SIO (SLAM)</strong>. 
+        Des expériences concrètes qui ont forgé mon profil technique.
+      </p>
+    </header>
+
+    <div class="timeline" id="timeline-container">
+      
+      <div class="timeline-track"></div>
+      <div class="timeline-progress" id="timeline-progress"></div>
+      
+      <div class="timeline-item reveal-on-scroll left-side">
+        <div class="timeline-dot"></div>
+        <div class="timeline-connector"></div>
+        
+        <article class="timeline-content glass-card tilt-effect">
+          <div class="content-header">
+            <div class="logo-box float-anim">
+              <img src="crpn.png" alt="Logo CRPN" />
+            </div>
+            <div class="title-box">
+              <div class="badges-wrapper">
+                <span class="date-badge neon-badge">2026</span>
+                <span class="duration-badge">⏱ 5 Semaines</span>
+              </div>
+              <h2 class="premium-title">CRPN – Retraite des navigants</h2>
+              <span class="role">Stage 2ème année - Dev Logiciel</span>
+            </div>
+          </div>
+          
+          <p class="description" style="margin-bottom: 10px;">
+            Intégré au sein de la Caisse de Retraite du Personnel Navigant (CRPN), j'ai participé activement à l'évolution des outils internes. 
+            J'ai travaillé sur le développement d'applications, l'optimisation des bases de données et assuré la continuité des services.
+          </p>
+          <ul style="margin-bottom: 20px; padding-left: 20px; line-height: 1.6;">
+            <li><strong>Projet confié :</strong> Développement d'une application nommée "Contrathèque".</li>
+            <li><strong>Objectif :</strong> Regrouper et centraliser l'ensemble des factures de l'entreprise sur une seule et même plateforme.</li>
+          </ul>
+          
+          <div class="tech-tags">
+            <span class="tag">Python</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Architecture SI</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="timeline-item reveal-on-scroll right-side">
+        <div class="timeline-dot"></div>
+        <div class="timeline-connector"></div>
+        
+        <article class="timeline-content glass-card tilt-effect">
+          <div class="content-header">
+            <div class="logo-box float-anim-alt">
+              <img src="omega.png" alt="Logo Omega Business" />
+            </div>
+            <div class="title-box">
+              <div class="badges-wrapper">
+                <span class="date-badge neon-badge">2025</span>
+                <span class="duration-badge">⏱ 5 Semaines</span>
+              </div>
+              <h2 class="premium-title">Omega Business International</h2>
+              <span class="role">Stage 1ère année - Systèmes & Réseaux</span>
+            </div>
+          </div>
+          
+          <p class="description" style="margin-bottom: 10px;">
+            Une première expérience fondatrice dans un environnement international. J'ai eu l'opportunité d'administrer 
+            les systèmes, de gérer le parc informatique et d'apporter un support technique aux collaborateurs.
+          </p>
+          <ul style="margin-bottom: 20px; padding-left: 20px; line-height: 1.6;">
+            <li><strong>Projet réalisé :</strong> Mise en place d'un outil d'automatisation de l'inventaire parc.</li>
+            <li><strong>Objectif :</strong> Création de scripts pour recenser automatiquement le matériel et les logiciels des postes de travail.</li>
+          </ul>
+          
+          <div class="tech-tags">
+            <span class="tag">Gestion de Parc</span>
+            <span class="tag">Support IT</span>
+            <span class="tag">Automation</span>
+          </div>
+
+          <div style="margin-top: 25px;">
+            <a href="rapport_stage_omega.pdf" target="_blank" class="btn-primary" style="font-size: 14px; padding: 10px 16px; text-decoration: none;">
+              📄 Télécharger le rapport (PDF)
+            </a>
+          </div>
+
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="colonne">
+      <h3>Mon parcours</h3>
+      <p>BTS SIO - option SLAM</p>
+      <p>Passionné d’informatique depuis toujours</p>
+      <p>Objectif : devenir développeur full-stack</p>
+    </div>
+    <div class="colonne">
+      <h3>Contact</h3>
+      <p>Email : yacinetouazi11@gmail.com</p>
+      <p>LinkedIn : <a href="https://linkedin.com/in/touaziyacine" target="_blank">linkedin.com/in/touaziyacine</a></p>
+      <p>GitHub : <a href="https://github.com/touaziyacine" target="_blank">github.com/touaziyacine</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const timelineContainer = document.getElementById("timeline-container");
+      const track = document.querySelector(".timeline-track");
+      const progressBar = document.getElementById("timeline-progress");
+      const dots = document.querySelectorAll(".timeline-dot");
+      const items = document.querySelectorAll(".reveal-on-scroll");
+
+      function fillTimeline() {
+        if (!timelineContainer || !progressBar || dots.length < 2) return;
+        
+        const firstDot = dots[0];
+        const lastDot = dots[dots.length - 1];
+        
+        const containerRect = timelineContainer.getBoundingClientRect();
+        const firstDotRect = firstDot.getBoundingClientRect();
+        const lastDotRect = lastDot.getBoundingClientRect();
+        
+        const startY = (firstDotRect.top - containerRect.top) + (firstDotRect.height / 2);
+        const endY = (lastDotRect.top - containerRect.top) + (lastDotRect.height / 2);
+        
+        const trackHeight = endY - startY;
+        
+        track.style.top = startY + "px";
+        track.style.height = trackHeight + "px";
+        progressBar.style.top = startY + "px";
+        
+        const triggerPoint = window.innerHeight * 0.65;
+        const scrollPosition = triggerPoint - (firstDotRect.top + firstDotRect.height / 2);
+        
+        let fillHeight = scrollPosition;
+
+        if (fillHeight < 0) fillHeight = 0;
+        if (fillHeight > trackHeight) fillHeight = trackHeight;
+
+        progressBar.style.height = fillHeight + "px";
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            entry.target.querySelector('.timeline-dot').classList.add("active-dot");
+            entry.target.querySelector('.timeline-connector').classList.add("active-connector");
+          }
+        });
+      }, { threshold: 0.2 });
+
+      items.forEach(item => observer.observe(item));
+
+      window.addEventListener("scroll", fillTimeline);
+      window.addEventListener("resize", fillTimeline); 
+      setTimeout(fillTimeline, 100);
+    });
+  </script>
+
+</body>
+</html>
