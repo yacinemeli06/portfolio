@@ -277,11 +277,22 @@ footer .colonne p:hover {
 /* ====== RESPONSIVE ====== */
 @media screen and (max-width: 700px) {
   nav {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 2%;
   }
 
   nav ul {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 6px;
+  }
+
+  nav ul li {
+    margin-left: 8px;
+    padding: 8px 0;
   }
 
   .page-content header {
